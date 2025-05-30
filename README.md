@@ -29,3 +29,11 @@ Simulation:
       Contains the processing of a given diffraction pattern and probe and outputs the reconstruction of the object (T) and probe (P)
   - angular_spectrum_method2:
       Code containing the algorithm for propagation used in reconstruction. Created by Rafael de la Fuente
+
+- Diffraction-Simulator:
+  The scripts that are used to create far-field diffraction patterns of a given probe and sample
+  the "phase" at the end of the scripts can be ignored as they just reference the work with phase-images.
+  
+  propeprob.py is used first to create propagated versions of the given probe.
+  nearfieldpropphase.py creates the transmission function of a given sample by combining it with a propagated probe
+  farfieldpropphase.py creates the far-field diffraction patterns of the transmission functions, outputting diffraction patterns that can be reconstructed by ePIE.
